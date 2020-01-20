@@ -1,0 +1,79 @@
+﻿@model LimeTac.WebUi.Models.GoogleMapsClientKeyViewModel
+@{ Layout = null; }
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130195848-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-130195848-1');
+      </script>
+      <meta charset="utf-8">
+      <!-- [ FONTS ]-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet">
+      <!-- [ JQUERY ]-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="/Scripts/Zuc/js/navigation.js"></script>
+      <script src="/Scripts/Zuc/js/modals.js"></script>
+      <script src="/Scripts/Zuc/js/about-us.js"></script>
+      <script src="/Scripts/Zuc/js/culture-community.js"></script>
+      <script>
+        var LTAppSettingUserIsSignedIn = @Request.IsAuthenticated.ToString().ToLowerInvariant();
+        var LTAppSettingUserName = "@User.Identity.Name";
+    </script>
+      <script src="/Scripts/Zuc/js/Controllers/Utils.js"></script>
+      <script src="/Scripts/Zuc/js/Controllers/@{@Request.FilePath.Split('/').Last()}.js"></script>
+      <!-- Google Maps API-->
+      <script src="https://maps.googleapis.com/maps/api/js?key=@Html.Raw(Model.GoogleMapsClientKey)&@Html.Raw(LimeTac.Ethnic.Resources.GoogleMapsAPIBaseLibraryIncludes),drawing"></script>
+      <!-- [ Alerts ]-->
+      <script src="//cdn.jsdelivr.net/alertifyjs/1.9.0/alertify.min.js"></script>
+      <link rel="stylesheet" href="//cdn.jsdelivr.net/alertifyjs/1.9.0/css/alertify.min.css">
+      <!-- [ RESPONSIVE VIEWPORT ]-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- [ Stylesheet ]-->
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="theme-color" content="#434da0">
+      <meta name="application-name" content="Zucora Home">
+      <link rel="apple-touch-icon" sizes="57x57" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-icon-180x180.png">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <meta name="apple-mobile-web-app-title" content="Zucora Home">
+      <link rel="icon" type="image/png" sizes="32x32" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/favicon-16x16.png">
+      <link rel="shortcut icon" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/favicon.ico">
+      <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-startup-image-320x460.png">
+      <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-startup-image-640x920.png">
+      <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-startup-image-640x1096.png">
+      <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-startup-image-750x1294.png">
+      <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-startup-image-1182x2208.png">
+      <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-startup-image-1242x2148.png">
+      <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-startup-image-748x1024.png">
+      <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-startup-image-768x1004.png">
+      <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-startup-image-1496x2048.png">
+      <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/Content/Zuc/icons-ec92211c479ab6b0a4ca59d705490eb3/apple-touch-startup-image-1536x2008.png">
+      <link href="/Content/Zuc/styles/styles9d66868d59cc90dfcd5c.css" rel="stylesheet">
+      <link href="/Content/Zuc/styles/new_styles.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      @RenderSection("styles", required: false)
+      @RenderSection("scripts", required: false)
+  </head>
+  <body>
+    @RenderBody()
+    <script type="text/javascript" src="/Content/Zuc/js/build9d66868d59cc90dfcd5c.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  </body>
+</html>
