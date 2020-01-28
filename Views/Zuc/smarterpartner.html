@@ -17,6 +17,7 @@
   <!-- [ FONTS ]-->
   <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
   <link href="https://use.typekit.net/ovc0ozw.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -169,13 +170,65 @@
       </div>
     </div>
   </section>
-  <div class="video-modal-container non-visible">
-    <div class="video-modal">
+  <div class="video-modal-container modal-container non-visible">
+    <div class="video-modal modalCustom">
       <span class="close-modal">X</span>
-      <h2>test</h2>
-      <video controls class="modal-video" autoplay id="clicked-video">
+      <h2></h2>
+      <video controls class="modal-video modal-content" autoplay id="clicked-video">
         <source src="" type="video/mp4">
       </video>
+    </div>
+  </div>
+  <div class="modal-container becomePartner-form-container">
+    <div class="modalCustom becomePartner-form">
+      <div class="purple-background flex flex-vert-center flex-hor-between">
+        <h2>Become a Smarter partner</h2>
+        <span class="close-modal">X</span>
+      </div>
+      <div class="sps-form-style">
+        <!-- <form class="sps-form-style"> -->
+        <div class="two-grid-column">
+          <div class="column-div">
+            <label for="">First name</label>
+            <input type="text" name="" value="" placeholder="First Name">
+          </div>
+          <div class="column-div">
+            <label for="">Last Name</label>
+            <input type="text" name="" value="" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="column-div">
+          <label for="">Email</label>
+          <input type="text" name="" value="" placeholder="Email Address">
+        </div>
+        <div class="column-div">
+          <label for="">Phone Number</label>
+          <input type="text" name="" value="" placeholder="Phone Number">
+        </div>
+        <div class="column-div">
+          <label for="">Store</label>
+          <input type="text" name="" value="" placeholder="Store">
+        </div>
+        <div class="column-div">
+          <label for="">Location</label>
+          <input type="text" name="" value="" placeholder="Location">
+        </div>
+        <!-- radio buttons -->
+        <div class="column-div">
+          <p>Do you currently offer Product Protection Plans</p>
+          <div class="flex flex-vert-start">
+            <div class="flex flex-vert-center">
+              <input type="radio" name="" value="">
+              <label for="">Yes</label>
+            </div>
+            <div class="flex flex-vert-center">
+              <input type="radio" name="" value="">
+              <label for="">No</label>
+            </div>
+          </div>
+        </div>
+        <!-- <form> -->
+      </div>
     </div>
   </div>
   <!-- main page content ends -->
@@ -244,6 +297,9 @@
     // new LTPublicUtils().ShowUI();
   </script>
   <script type="text/javascript" src="../../Content/Zuc/js/build9d66868d59cc90dfcd5c.js"></script>
+  <script type="text/javascript" src="../../Scripts/Zuc/js/smarter-partner.js">
+
+  </script>
 </body>
 
 </body>
