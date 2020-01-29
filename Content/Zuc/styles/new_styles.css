@@ -812,6 +812,17 @@ input[type=url],input[type=number] {
   grid-template-columns: 52% 45%;
   align-items: center;
 }
+.thankYou-modal p{
+    padding:1em 3em;
+    text-align: center;
+    font-size: 26px;
+    color:#36384B;
+    font-weight: 500;
+}
+
+.noZindex{
+    z-index: 0;
+}
 @media only screen and (min-width:641px) and (max-width:1024px) {
     .our-values .zuc-sixgrid-item img {
         width: 60%
@@ -829,6 +840,7 @@ input[type=url],input[type=number] {
     .org-logo .width-60 {
         width: 80%
     }
+
 }
 
 @media only screen and (min-width:641px) and (max-width:1024px) and (orientation:portrait) {
@@ -847,6 +859,12 @@ input[type=url],input[type=number] {
     }
     .org-logo .width-60 {
         width: 80%
+    }
+    .sps-form-style{
+        width: 100%;
+    }
+      .becomePartner-form{
+        width:100%;
     }
 }
 
@@ -1001,8 +1019,18 @@ input[type=url],input[type=number] {
     }
 
     .modalCustom h2{
-      font-size: 20px;
+      font-size: 30px;
       text-align: center;
+    }
+    .sps-form-style{
+        width: 100%;
+    }
+      .becomePartner-form{
+        width:100%;
+    }
+
+    .thankYou-modal p{
+        padding:1em;
     }
 }
 
