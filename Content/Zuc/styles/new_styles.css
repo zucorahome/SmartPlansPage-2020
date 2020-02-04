@@ -686,12 +686,42 @@ input[type=url],input[type=number] {
 .margin7{
   margin:7em auto;
 }
+
+
+.video-background{
+ background-position: center center;
+ background-size: cover;
+ width:100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+
+    .video-back1{
+        background-image: url('../../../Images/Zuc/images/smart-protection-plan/zucorahome-team-min.jpg');
+    }
+
+    .video-back2{
+        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-2-background.jpg');
+    }
+
+    .video-back3{
+        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-3-background.jpg');   
+    }
+
+    .video-back4{
+        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-4-background.jpg');
+    }
+
+    .video-back5{
+        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-5-background.jpg');
+    }
 .three-grid-column-center{
   display: grid;
   grid-template-columns: 33% 34% 33%;
   align-content: center;
   justify-content: center;
   /* padding:1em 15%; */
+  margin:10% auto;
 }
 
 .modal-container{
@@ -1012,7 +1042,7 @@ input[type=url],input[type=number] {
       max-width: 100%;
       margin:1em 0;
     }
-
+    
     .modalCustom{
       margin: 25% auto;
       width: 95%;
