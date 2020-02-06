@@ -654,9 +654,9 @@ input[type=url],input[type=number] {
 }
 
 .video-box{
-    width:90%;
+    width:95%;
     /* width:400px; */
-    height:400px;
+    height:300px;
     background-color: white;
     margin:0 auto;
     cursor: pointer;
@@ -681,17 +681,46 @@ input[type=url],input[type=number] {
 
 .fa-play{
   font-size:4em;
-  color:#434da0;
+  color:white;
 }
-.margin7{
-  margin:7em auto;
+
+.play-icon{
+
 }
+.video-background{
+ background-position: top center;
+ background-size: cover;
+ width:100%;
+ height: 100%;
+ background-repeat: no-repeat;
+}
+
+    .video-back1{
+        background-image: url('../../../Images/Zuc/images/smart-protection-plan/zucorahome-team-min.jpg');
+    }
+
+    .video-back2{
+        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-2-background.jpg');
+    }
+
+    .video-back3{
+        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-3-background.jpg');   
+    }
+
+    .video-back4{
+        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-4-background.jpg');
+    }
+
+    .video-back5{
+        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-5-background.jpg');
+    }
 .three-grid-column-center{
   display: grid;
   grid-template-columns: 33% 34% 33%;
   align-content: center;
   justify-content: center;
   /* padding:1em 15%; */
+  margin:10% auto;
 }
 
 .modal-container{
@@ -812,6 +841,17 @@ input[type=url],input[type=number] {
   grid-template-columns: 52% 45%;
   align-items: center;
 }
+.thankYou-modal p{
+    padding:1em 3em;
+    text-align: center;
+    font-size: 26px;
+    color:#36384B;
+    font-weight: 500;
+}
+
+.noZindex{
+    z-index: 0;
+}
 @media only screen and (min-width:641px) and (max-width:1024px) {
     .our-values .zuc-sixgrid-item img {
         width: 60%
@@ -829,6 +869,7 @@ input[type=url],input[type=number] {
     .org-logo .width-60 {
         width: 80%
     }
+
 }
 
 @media only screen and (min-width:641px) and (max-width:1024px) and (orientation:portrait) {
@@ -847,6 +888,12 @@ input[type=url],input[type=number] {
     }
     .org-logo .width-60 {
         width: 80%
+    }
+    .sps-form-style{
+        width: 100%;
+    }
+      .becomePartner-form{
+        width:100%;
     }
 }
 
@@ -994,15 +1041,25 @@ input[type=url],input[type=number] {
       max-width: 100%;
       margin:1em 0;
     }
-
+    
     .modalCustom{
       margin: 25% auto;
       width: 95%;
     }
 
     .modalCustom h2{
-      font-size: 20px;
+      font-size: 30px;
       text-align: center;
+    }
+    .sps-form-style{
+        width: 100%;
+    }
+      .becomePartner-form{
+        width:100%;
+    }
+
+    .thankYou-modal p{
+        padding:1em;
     }
 }
 
@@ -1157,7 +1214,8 @@ input[type=url],input[type=number] {
     }
 
     .two-grid-column-center{
-      padding:1em 10%;
+      /*padding:1em 10%;*/
+      /*padding: 1em 0;*/
     }
 }
 

@@ -1,4 +1,4 @@
-﻿@model LimeTac.WebUi.Models.GoogleMapsClientKeyViewModel
+@model LimeTac.WebUi.Models.GoogleMapsClientKeyViewModel
 @{
 Layout = null;
 char[] CharsToTrim = { ' ', '/' };
@@ -43,7 +43,6 @@ string Page = Request.Url.AbsolutePath.TrimStart(CharsToTrim).TrimEnd(CharsToTri
   <script src="/Scripts/Zuc/js/about-us.js"></script>
   <script src="/Scripts/Zuc/js/Controllers/Utils.js"></script>
   <script src="/Scripts/Zuc/js/culture-community.js"></script>
-
   <!-- Google Maps API-->
   <script src="https://maps.googleapis.com/maps/api/js?key=@Html.Raw(Model.GoogleMapsClientKey)&@Html.Raw(LimeTac.Ethnic.Resources.GoogleMapsAPIBaseLibraryIncludes),drawing"></script>
   <!-- [ Alerts ]-->
@@ -293,7 +292,7 @@ string Page = Request.Url.AbsolutePath.TrimStart(CharsToTrim).TrimEnd(CharsToTri
   <footer class="zuc-footer-wrapper">
     <!-- - Footer Links-->
     <footer class="flex flex-hor-center zuc-footer">
-      <div class="zuc-footer--brand-section flex flex-column"><a class="zuc-nav-brand" href="/Zuc/index" title="Home"><img src="/Images/Zuc/images/ZucoraHome-brand-white.svg"></a>
+      <div class="zuc-footer--brand-section flex flex-column noZindex"><a class="zuc-nav-brand" href="/Zuc/index" title="Home"><img src="/Images/Zuc/images/ZucoraHome-brand-white.svg"></a>
         <div class="zuc-footer--social-icons-primary">
           <div class="zuc-mobile-social flex flex-row flex-hor-center flex-vert-center">
             <!-- Facebook--><a class="zuc-social-link" target="_blank" href="https://www.facebook.com/zucorahomesmarterliving/" title="Like us on Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -329,7 +328,7 @@ string Page = Request.Url.AbsolutePath.TrimStart(CharsToTrim).TrimEnd(CharsToTri
         <div class="zuc-footer-row flex">
           <div class="flex flex-column flex-vert-start zuc-footer--column">
             <h4 class="zuc-footer--header u-uppercase">Partners</h4>
-            <a class="zuc-footer--link" title="Join as Retailer" href="#/">Smarter Partner</a>
+            <a class="zuc-footer--link" title="Join as Retailer" href="/Zuc/smarterpartner">Smarter Partner</a>
             <!-- <a class="zuc-footer--link" title="Join as Contractor" href="#/">I am a Contractor</a> -->
           </div>
         </div>
