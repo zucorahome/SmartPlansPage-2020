@@ -654,9 +654,9 @@ input[type=url],input[type=number] {
 }
 
 .video-box{
-    width:90%;
+    width:95%;
     /* width:400px; */
-    height:400px;
+    height:300px;
     background-color: white;
     margin:0 auto;
     cursor: pointer;
@@ -681,15 +681,14 @@ input[type=url],input[type=number] {
 
 .fa-play{
   font-size:4em;
-  color:#434da0;
-}
-.margin7{
-  margin:7em auto;
+  color:white;
 }
 
+.play-icon{
 
+}
 .video-background{
- background-position: center center;
+ background-position: top center;
  background-size: cover;
  width:100%;
  height: 100%;
@@ -1215,7 +1214,8 @@ input[type=url],input[type=number] {
     }
 
     .two-grid-column-center{
-      padding:1em 10%;
+      /*padding:1em 10%;*/
+      /*padding: 1em 0;*/
     }
 }
 
