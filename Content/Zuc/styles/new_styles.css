@@ -615,7 +615,7 @@ input[type=url],input[type=number] {
 .smart-protection-plans-container,.smarter-retailer-container{
     margin:7% auto;
     padding:0 2em;
-    width:85%;
+    width:100%;
 }
 
 .smart-protection-plans-container .zuc-title-flag, .smarter-retailer-container .zuc-title-flag{
@@ -679,13 +679,15 @@ input[type=url],input[type=number] {
     justify-content: center;
 }
 
-.fa-play{
-  font-size:4em;
-  color:white;
+.fa-play,.fa-play-circle{
+  font-size:5em;
+  /* color:#434da0; */
+  color: white;
 }
 
 .play-icon{
-
+  position: relative;
+  bottom: 70%;
 }
 .video-background{
  background-position: top center;
@@ -693,6 +695,7 @@ input[type=url],input[type=number] {
  width:100%;
  height: 100%;
  background-repeat: no-repeat;
+ box-shadow: inset 0 0 0 2000px hsla(0,0%,5%,.2);
 }
 
     .video-back1{
@@ -704,7 +707,7 @@ input[type=url],input[type=number] {
     }
 
     .video-back3{
-        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-3-background.jpg');   
+        background-image: url('../../../Images/Zuc/images/smart-protection-plan/video-3-background.jpg');
     }
 
     .video-back4{
@@ -738,7 +741,7 @@ input[type=url],input[type=number] {
     border: 2px solid #36384B;
     background: white;
     width: 70%;
-    margin: 15% auto;
+    margin: 8% auto;
     padding:1em;
 }
 
@@ -869,7 +872,14 @@ input[type=url],input[type=number] {
     .org-logo .width-60 {
         width: 80%
     }
-
+    .three-grid-column-center{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap:6em;
+    }
+    .smart-protection-plans-container,.smarter-retailer-container{
+          margin:15% auto;
+    }
 }
 
 @media only screen and (min-width:641px) and (max-width:1024px) and (orientation:portrait) {
@@ -894,6 +904,9 @@ input[type=url],input[type=number] {
     }
       .becomePartner-form{
         width:100%;
+    }
+    .smart-protection-plans-container,.smarter-retailer-container{
+      margin:15% auto;
     }
 }
 
@@ -1031,9 +1044,19 @@ input[type=url],input[type=number] {
     }
     .smart-protection-plans-container,.smarter-retailer-container{
         width:100%;
+        margin:30% auto;
     }
     .two-grid-column-center, .three-grid-column-center{
       grid-template-columns: 100%;
+      grid-gap:4em;
+    }
+
+    .smarter-partner-logo{
+      width:75%;
+    }
+
+    .three-grid-column-center{
+      margin:20% auto;
     }
 
     .video-box{
@@ -1041,7 +1064,7 @@ input[type=url],input[type=number] {
       max-width: 100%;
       margin:1em 0;
     }
-    
+
     .modalCustom{
       margin: 25% auto;
       width: 95%;
@@ -1171,7 +1194,6 @@ input[type=url],input[type=number] {
     .two-column-smarterPlan{
         padding:1em 6em;
     }
-
 }
 
 @media only screen and (min-width:1025px) and (max-width:1440px) {
@@ -1206,15 +1228,19 @@ input[type=url],input[type=number] {
     .two-column-smarterPlan{
         padding:1em 25em;
     }
-
+    .smart-protection-plans-container,.smarter-retailer-container{
+      width:85%;
+      margin:5% auto;
+    }
     .two-grid-column-center .video-box{
-      /* width:400px; */
-      /* max-width: 100%; */
       margin-top:1em;
     }
-
-    .two-grid-column-center{
-      /*padding:1em 10%;*/
+    .three-grid-column-center{
+      display: grid;
+      grid-template-columns: 34% 33% 33%;
+    }
+      .two-grid-column-center{
+      padding:1em 10%;
       /*padding: 1em 0;*/
     }
 }
