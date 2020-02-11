@@ -719,11 +719,11 @@ input[type=url],input[type=number] {
     }
 .three-grid-column-center{
   display: grid;
-  grid-template-columns: 33% 34% 33%;
+  grid-template-columns: 33% 33% 33%;
   align-content: center;
   justify-content: center;
   /* padding:1em 15%; */
-  margin:10% auto;
+  margin:7% auto;
 }
 
 .modal-container{
@@ -855,6 +855,16 @@ input[type=url],input[type=number] {
 .noZindex{
     z-index: 0;
 }
+.shop-now-link{
+    width: 100%;
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 2vh 7vw;
+    color: #f7f7f7;
+    transition: all,.3s;
+    letter-spacing: 1px;
+}
 @media only screen and (min-width:641px) and (max-width:1024px) {
     .our-values .zuc-sixgrid-item img {
         width: 60%
@@ -876,6 +886,7 @@ input[type=url],input[type=number] {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-row-gap:6em;
+        margin:9% auto;
     }
     .smart-protection-plans-container,.smarter-retailer-container{
           margin:15% auto;
@@ -1191,7 +1202,9 @@ input[type=url],input[type=number] {
         justify-content: center;
         align-items: center
     }
-
+    .three-grid-column-center{
+      margin:8% auto;
+    }
 }
 
 
@@ -1229,22 +1242,28 @@ input[type=url],input[type=number] {
     }
     .smart-protection-plans-container,.smarter-retailer-container{
       width:85%;
-      margin:9% auto;
+      margin:7% auto;
     }
     .two-grid-column-center .video-box{
       margin-top:1em;
     }
     .three-grid-column-center{
       display: grid;
-      grid-template-columns: 34% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+      margin:5% auto;
     }
       .two-grid-column-center{
-      padding:1em 10%;
+      padding:1em 16.5%;
       /*padding: 1em 0;*/
     }
 
     .video-box{
-        max-width:485px;
+        max-width:500px;
+    }
+
+    .becomeSP-formOpen{
+      position: relative;
+      top:5em;
     }
 }
 
