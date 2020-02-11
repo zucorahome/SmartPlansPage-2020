@@ -25,5 +25,11 @@ $('.video-modal .close-modal').click(function(){
   	vid.load();
   	$('.modal-video').empty();
   });
+$('.becomeSP-formOpen').click(function(){
+  $('.becomePartner-form-container').removeClass('non-visible');
 
+  });
+$('.becomePartner-form').find('.close-modal').click(function(){
+   $('.becomePartner-form-container').addClass('non-visible');
+  });
 }); //main document ends

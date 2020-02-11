@@ -613,7 +613,7 @@ input[type=url],input[type=number] {
 }
 /*New Smarter Protection Plan page*/
 .smart-protection-plans-container,.smarter-retailer-container{
-    margin:7% auto;
+    margin:9% auto;
     padding:0 2em;
     width:100%;
 }
@@ -1191,10 +1191,9 @@ input[type=url],input[type=number] {
         justify-content: center;
         align-items: center
     }
-    .two-column-smarterPlan{
-        padding:1em 6em;
-    }
+
 }
+
 
 @media only screen and (min-width:1025px) and (max-width:1440px) {
     .our-values .zuc-sixgrid-item img {
@@ -1226,11 +1225,11 @@ input[type=url],input[type=number] {
         background-size: cover
     }
     .two-column-smarterPlan{
-        padding:1em 25em;
+        padding:1em 10em;
     }
     .smart-protection-plans-container,.smarter-retailer-container{
       width:85%;
-      margin:5% auto;
+      margin:9% auto;
     }
     .two-grid-column-center .video-box{
       margin-top:1em;
@@ -1242,6 +1241,10 @@ input[type=url],input[type=number] {
       .two-grid-column-center{
       padding:1em 10%;
       /*padding: 1em 0;*/
+    }
+
+    .video-box{
+        max-width:485px;
     }
 }
 
