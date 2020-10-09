@@ -697,8 +697,9 @@
 }
 
 .three-column-smarterPlan {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    /*flex-direction: row;*/
     align-content: center;
     justify-content: center;
 }
